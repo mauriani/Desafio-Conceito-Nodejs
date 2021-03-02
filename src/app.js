@@ -21,7 +21,7 @@ function validateProjectId(request, response, next) {
 app.use("/projects/:id", validateProjectId);
 
 app.get("/repositories", (response) => {
-  return response.json(repositories);
+  return response.status(200).json(repositories);
 });
 
 app.post("/repositories", (request, response) => {
@@ -29,7 +29,7 @@ app.post("/repositories", (request, response) => {
   const repository = { id: uuid(), title, url, techs, likes: 0 };
 
   repositories.push(repository);
-  return response.json(repository);
+  return response.status(201).json(repository);
 });
 
 app.put("/repositories/:id", (request, response) => {
@@ -85,7 +85,7 @@ app.post("/repositories/:id/like", (request, response) => {
 
   repositories[repositoryIndex].likes += 1;
 
-  return response.json(repositories[repositoryIndex]);
+  return response.status(200).json(repositories[repositoryIndex]);
 });
 
 module.exports = app;
