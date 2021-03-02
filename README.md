@@ -8,7 +8,7 @@
 
 
 ## :rocket: Sobre o desafio
-Nesse desafios foi estabelecido conceitos que foi ensinado em aul. O projeto consiste em armazenar positórios do meu (seu) portifólio, essa aplicação permite a criação, listagem, atualização e a remoção de um repositório específico, também adicionamos uma rota onde o usuário pode alterar o like.
+Nesse desafios foi estabelecido conceitos que foi ensinado durantes o primeiro módulo do bootcamp. O projeto consiste em armazenar positórios do meu (seu) portifólio, essa aplicação permite a criação, listagem, atualização e a remoção de um repositório específico, também adicionamos uma rota onde o usuário pode alterar o like.
 
 ### Rotas da aplicação
 
