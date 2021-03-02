@@ -13,7 +13,7 @@ const repositories = [];
 function validateProjectId(request, response, next) {
   const { id } = request.params;
   if (!isUuid(id)) {
-    return response.status(400).json({ error: "Inválid project ID." });
+    return response.status(400).json({ error: "Inválid repository ID." });
   }
   return next();
 }
