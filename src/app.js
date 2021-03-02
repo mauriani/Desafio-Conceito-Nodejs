@@ -29,7 +29,7 @@ app.post("/repositories", (request, response) => {
   const repository = { id: uuid(), title, url, techs, likes: 0 };
 
   repositories.push(repository);
-  return response.status(200).json(repository);
+  return response.json(repository);
 });
 
 app.put("/repositories/:id", (request, response) => {
