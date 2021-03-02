@@ -20,7 +20,7 @@ function validateProjectId(request, response, next) {
 
 app.use("/projects/:id", validateProjectId);
 
-app.get("/repositories", (response) => {
+app.get("/repositories", (request, response) => {
   return response.status(200).json(repositories);
 });
 
@@ -29,7 +29,7 @@ app.post("/repositories", (request, response) => {
   const repository = { id: uuid(), title, url, techs, likes: 0 };
 
   repositories.push(repository);
-  return response.status(201).json(repository);
+  return response.status(200).json(repository);
 });
 
 app.put("/repositories/:id", (request, response) => {
