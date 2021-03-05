@@ -20,6 +20,11 @@ Nesse desafios foi estabelecido conceitos que foi ensinado durantes o primeiro m
 
 ### Clonando o projeto
 
+#### Requisitos para instalação
+- NodeJS na versão 8 ou superior;
+- yarn ou npm;
+- curl, postman ou insomnia.
+
 ```jsx
 git clone https://github.com/mauriani/Desafio-Conceito-Nodejs
 ```
