@@ -28,7 +28,7 @@ Nesse desafios foi estabelecido conceitos que foi ensinado durantes o primeiro m
 Agora vamos clonar o repositório
 
 ```jsx
-git clone https://github.com/mauriani/Desafio-Conceito-Nodejs
+https://github.com/mauriani/Desafio-Conceito-Nodejs.git
 ```
 
 ### Executando
